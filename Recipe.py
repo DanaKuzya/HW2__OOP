@@ -21,6 +21,8 @@ class Recipe:
         return False
 
     def scale(self, ratio: float):
+        if not self.is_valid_ratio(ratio):
+            raise ValueError("Передан неположительный коэффицент")
         recipe1 = Recipe(self.title)
         for ingr in self.ingredients:
             ingr1 = Ingredient(ingr.name, ingr.quantity * ratio, ingr.unit)

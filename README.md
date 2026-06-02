@@ -8,7 +8,7 @@
 Использование:
 Клонирование репозитория:
 git clone https://github.com/DanaKuzya/HW2__OOP
-cd https://github.com/DanaKuzya/HW2__OOP
+cd HW2__OOP
 Установка зависимостей:
 pip install -r requirements.txt
 Запуск тестов:

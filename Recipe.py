@@ -3,8 +3,11 @@ from Ingredient import Ingredient
 
 class Recipe:
     def __init__(self, Title, Ingredients=None):
+        if Ingredients is None:
+            self.ingredients = []
+        else:
+            self.ingredients = Ingredients
         self.title = Title
-        self.ingredients = Ingredients
 
     def add_ingredient(self, ingredient: Ingredient):
         for ingr in self.ingredients:

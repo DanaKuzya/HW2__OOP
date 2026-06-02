@@ -1,5 +1,3 @@
-from curses.ascii import isdigit
-
 from Ingredient import Ingredient
 
 

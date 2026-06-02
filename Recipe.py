@@ -31,7 +31,7 @@ class Recipe:
         return len(self.ingredients)
 
     def __str__(self):
-        list0 = ""
+        list0 = self.title + "\nИнгридиенты:\n"
         for ingr in self.ingredients:
             list0 += str(ingr) + "\n"
         return list0

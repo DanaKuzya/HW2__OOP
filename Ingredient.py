@@ -5,11 +5,11 @@ class Ingredient:
         self.unit = Unit
 
     @property
-    def quantity(self):
+    def _quantity(self):
         return self.quantity
 
-    @property.setter
-    def quantity(self, quan):
+    @_quantity.setter
+    def _quantity(self, quan):
         if quan <= 0:
             raise ValueError("Количество должно быть положительным")
         self.quantity = float(quan)

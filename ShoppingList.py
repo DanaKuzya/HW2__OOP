@@ -23,11 +23,11 @@ class ShoppingList:
 
     def get_list(self):
         list1 = dict()
-        for item in self._items():
+        for item in self._items:
             if (item[0].name, item[0].unit) in list1:
-                list1[(item[0].name, item[0].unit)] += item.quantity
+                list1[(item[0].name, item[0].unit)] += item[0].quantity
             else:
-                list1[(item[0].name, item[0].unit)] = item.quantity
+                list1[(item[0].name, item[0].unit)] = item[0].quantity
         list0 = []
         for key, val in list1.items():
             ingr = Ingredient(key[0], val, key[1])
